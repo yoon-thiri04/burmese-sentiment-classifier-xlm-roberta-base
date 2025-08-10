@@ -49,20 +49,20 @@ print("Predicted Sentiment:", label_map[predicted_class])
   * Additional curated Burmese data
 * Preprocessing includes encoding normalization (Zawgyi → Unicode) and tokenization with the XLM-RoBERTa tokenizer.
 
----
+
 
 ## Evaluation
 
 The model was evaluated on held-out data using accuracy, precision, recall, and F1 score, achieving strong performance (F1 > 0.84).
 
----
+
 
 ## Limitations
 
 * Performance may degrade on domain-shifted data or heavy code-mixed Burmese-English text.
 * Sarcasm and mixed sentiments are challenging.
 
----
+
 
 ## License
 
