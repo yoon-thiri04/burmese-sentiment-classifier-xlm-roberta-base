@@ -1,7 +1,7 @@
 # Burmese Sentiment Analysis with XLM-RoBERTa
 
 ## Overview
-This repository hosts a fine-tuned version of **FacebookAI/xlm-roberta-base** for **Burmese sentiment analysis**.  
+This repo contains a fine-tuned XLM-RoBERTa model specialized for analyzing sentiment in Burmese text.  
 The model classifies Burmese text into three sentiment categories:  
 - Positive  
 - Negative  
