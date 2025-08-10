@@ -1,0 +1,10 @@
+transformers
+torch
+gradio
+pandas
+datasets
+myanmartools
+PyICU
+scikit-learn
+accelerate
+evaluate
