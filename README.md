@@ -16,7 +16,7 @@ It was trained on publicly available Burmese sentiment datasets with additional 
 - **Task:** Sentiment classification  
 - **Languages:** Burmese (`my`), supports multilingual inputs   
 - **Developer:** Yoon Thiri Aung ([GitHub profile](https://github.com/yoon-thiri04))  
-
+- **[Demo Here! ](https://huggingface.co/spaces/emilyyy04/burmese-sentiment-analysis-demo)**
 ---
 
 ## Usage Example
