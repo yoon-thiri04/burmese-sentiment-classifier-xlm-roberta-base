@@ -25,7 +25,7 @@ It was trained on publicly available Burmese sentiment datasets with additional 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
-model_name = "your-github-username/xlm-roberta-burmese-sentiment"  # Replace with your repo name
+model_name = "emilyyy04/xlm-roberta-burmese-sentiment"  # Replace with your repo name
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 
