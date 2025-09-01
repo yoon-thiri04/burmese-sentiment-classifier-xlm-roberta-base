@@ -18,6 +18,7 @@ It was trained on publicly available Burmese sentiment datasets with additional 
 - **Developer:** Yoon Thiri Aung ([GitHub profile](https://github.com/yoon-thiri04))  
 - **[Demo Here! ](https://huggingface.co/spaces/emilyyy04/burmese-sentiment-analysis-demo)**
 ---
+## Uses
 
 ## Usage Example
 
@@ -39,7 +40,16 @@ print("Predicted Sentiment:", label_map[predicted_class])
 ````
 
 ---
+### Direct Use
+- Sentiment classification of Burmese text from social media, reviews, comments, and other user-generated content.
+- Building sentiment-aware Burmese NLP applications such as chatbots, analytics dashboards, and content moderation tools.
 
+### Limitations
+- May not generalize well to domains significantly different from the training data.
+- May misclassify sentences with mixed sentiments or sarcasm.
+- Performance may drop for code-mixed Burmese-English text with heavy slang or informal spelling.
+
+---
 
 ## Training Details
 
