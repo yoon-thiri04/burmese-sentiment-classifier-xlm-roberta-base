@@ -53,8 +53,16 @@ print("Predicted Sentiment:", label_map[predicted_class])
 
 ## Evaluation
 
-The model was evaluated on held-out data using accuracy, precision, recall, and F1 score, achieving strong performance (F1 > 0.84).
+### Metrics
+The model was evaluated on a held-out validation set using accuracy, precision, recall, and F1 score.
 
+| Epoch | Val Loss  | Accuracy | Precision | Recall   | F1       |
+|-------|-----------|----------|-----------|----------|----------|
+| 1     | 0.6171    | 0.7859   | 0.7994    | 0.7859   | 0.7875   |
+| 2     | 0.4268    | 0.8470   | 0.8465    | 0.8470   | 0.8464   |
+| 3     | 0.4115    | 0.8451   | 0.8447    | 0.8451   | 0.8448   |
+
+The final model used is the checkpoint with the highest **F1 score**.
 
 
 ## Limitations
