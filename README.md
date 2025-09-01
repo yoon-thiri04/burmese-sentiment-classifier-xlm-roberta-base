@@ -40,15 +40,34 @@ print("Predicted Sentiment:", label_map[predicted_class])
 
 ---
 
-## Training Data & Preprocessing
 
-* Datasets used:
+## Training Details
 
-  * [kalixlouiis/burmese-sentiment-analysis](https://huggingface.co/datasets/kalixlouiis/burmese-sentiment-analysis)
-  * [chuuhtetnaing/myanmar-social-media-sentiment-analysis-dataset](https://huggingface.co/datasets/chuuhtetnaing/myanmar-social-media-sentiment-analysis-dataset)
-  * Additional curated Burmese data
-* Preprocessing includes encoding normalization (Zawgyi → Unicode) and tokenization with the XLM-RoBERTa tokenizer.
+### Training Data
+- **Sources:**
+  - [`kalixlouiis/burmese-sentiment-analysis`](https://huggingface.co/datasets/kalixlouiis/burmese-sentiment-analysis)
+  - [`chuuhtetnaing/myanmar-social-media-sentiment-analysis-dataset`](https://huggingface.co/datasets/chuuhtetnaing/myanmar-social-media-sentiment-analysis-dataset)
+  - Additional curated data collected and annotated by the author.
 
+- **Preprocessing:**
+  - Converted Zawgyi-encoded text to Unicode.
+  - Cleaned and normalized text fields.
+  - Tokenized using the XLM-RoBERTa tokenizer with:
+    - `max_length=128`
+    - Truncation and padding to maximum length.
+
+### Training Procedure
+- **Optimizer:** AdamW (default in Hugging Face `Trainer`)
+- **Learning rate:** 2e-5
+- **Batch size:** 8 (train & eval)
+- **Epochs:** 3
+- **Weight decay:** 0.01
+- **Mixed precision (fp16):** Enabled when training on GPU
+- **Metric for best model:** F1 score (weighted average)
+- **Evaluation strategy:** Per epoch
+- **Model selection:** Best F1 score checkpoint
+
+---
 
 
 ## Evaluation
